@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Choco Delight</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --dark-chocolate: #3d2b1f;
+            --milk-chocolate: #7b5e4f;
+            --cream: #fffaf0;
+        }
+
+        #header{
+            background-color: #3d2b1f;
+            position: sticky;
+            top: 0%;
+            z-index: 10;
+        }
+        #a_nav{
+            color: wheat;
+        }
+        #h3_nav{
+            color: wheat;
+            position: relative;
+            top: 20px;
+            right: 200px;
+        }
+        #a_nav:hover{
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 2px;
+        }
+
+        .navbar {
+            background-color: var(--dark-chocolate) !important;
+        }
+
+        .order-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: none;
+        }
+
+        .btn-chocolate {
+            background-color: var(--dark-chocolate);
+            color: white;
+            transition: 0.3s;
+        }
+
+        .btn-chocolate:hover {
+            background-color: var(--milk-chocolate);
+            color: white;
+        }
+
+        #successAlert {
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav justify-content-center" id="header" style="height: 80px; font-size: larger;">
+        <h3 id="h3_nav">CHOCO DELIGHT</h3>
+        <a id="a_nav" class="nav-link dropdown-toggle pt-4 me-4" data-bs-toggle="dropdown" href="#" style="color: wheat;"><b>Shop all</b></a>
+        <ul class="dropdown-menu">
+        <li><a href="file:///C:/Users/neeth/.vscode/Bootstrap/darkchocolate.html" class="dropdown-item text-dark">Dark Chocolate</a></li>
+        <li><a href="file:///C:/Users/neeth/.vscode/Bootstrap/whitechoco.html" class="dropdown-item text-dark">White Chocolate</a></li>
+        <li><a href="file:///C:/Users/neeth/.vscode/Bootstrap/milkchoco.html" class="dropdown-item text-dark">Milk Chocolate</a></li>
+        <li><a href="file:///C:/Users/neeth/.vscode/Bootstrap/plainchoco.html" class="dropdown-item text-dark">Plain Chocolate</a></li>
+        </ul>
+        <a id="a_nav" href="file:///C:/Users/neeth/.vscode/Bootstrap/ChocoDelight.html" class="nav-link pt-4 me-4"><b>Home</b></a>
+        <a id="a_nav" href="file:///C:/Users/neeth/.vscode/Bootstrap/Aboutus.html" class="nav-link pt-4 me-4"><b>About us</b></a>
+        <a id="a_nav" href="file:///C:/Users/neeth/.vscode/Bootstrap/contact.html" class="nav-link pt-4 me-4"><b>Contact us</b></a>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card order-card p-4">
+                    <h2 class="text-center mb-4 fw-bold">Place Your Order</h2>
+                    
+                    <div id="successAlert" class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>Success!</strong> Your delicious order has been placed successfully.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
+                    <form id="orderForm">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email ID</label>
+                            <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="userPhone" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Delivery Address</label>
+                            <textarea class="form-control" id="userAddress" rows="3" placeholder="Enter your full address" required></textarea>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label d-block">Payment Method</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="paymentOption" id="cod" value="COD" checked>
+                                <label class="form-check-label" for="cod">Cash on Delivery</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="paymentOption" id="online" value="Online">
+                                <label class="form-check-label" for="online">Online Pay</label>
+                            </div>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-chocolate btn-lg">Confirm Order</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const orderForm = document.getElementById('orderForm');
+        const successAlert = document.getElementById('successAlert');
+
+        orderForm.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            successAlert.style.display = 'block';
+
+
+            orderForm.reset();
+
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choco Delight-Milk Chocolate</title>
+    <link rel="icon" href="Logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        #header{
+            background-color: #3d2b1f;
+            position: sticky;
+            top: 0%;
+            z-index: 10;
+        }
+        #a_nav{
+            color: wheat;
+        }
+        #h3_nav{
+            color: wheat;
+            position: relative;
+            top: 20px;
+            right: 200px;
+        }
+        #a_nav:hover{
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 2px;
+        }
+        #main{
+            position: relative;
+            bottom: 16px;
+        }
+        #main1{
+            position: relative;
+            top: 20px;
+        }
+        #img_main1{
+            height: 250px;
+            width: 248px;
+        }
+        #div1_main1{
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            top: 20px;
+        }
+        #card_main1{
+            height: 400px;
+            width: 250px;
+        }
+        #card_main1:hover{
+            border-color: rgb(104, 100, 100);
+        }
+        #div2_main1{
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            top: 60px;
+        }
+        #card_p1{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #div3_main1{
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            top: 100px;
+        }
+        #div4_main1{
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            top: 140px;
+        }
+        footer{
+            background-color: #3d2b1f;
+            justify-content: space-evenly;
+            position: relative;
+            top: 200px;
+        }
+        #h5_footer{
+            color: wheat;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #a_footer{
+            color: wheat;
+            text-decoration: none;
+        }
+        #a_footer:hover{
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav justify-content-center" id="header" style="height: 80px; font-size: larger;">
+        <h3 id="h3_nav">CHOCO DELIGHT</h3>
+        <a id="a_nav" class="nav-link dropdown-toggle pt-4 me-4" data-bs-toggle="dropdown" href="#"><b>Shop all</b></a>
+        <ul class="dropdown-menu">
+        <li><a href="file:///C:/Users/neeth/.vscode/Bootstrap/darkchocolate.html" class="dropdown-item text-dark">Dark Chocolate</a></li>
+        <li><a href="file:///C:/Users/neeth/.vscode/Bootstrap/whitechoco.html" class="dropdown-item text-dark">White Chocolate</a></li>
+        <li><a href="file:///C:/Users/neeth/.vscode/Bootstrap/milkchoco.html" class="dropdown-item text-dark">Milk Chocolate</a></li>
+        <li><a href="file:///C:/Users/neeth/.vscode/Bootstrap/plainchoco.html" class="dropdown-item text-dark">Plain Chocolate</a></li>
+        </ul>
+        <a id="a_nav" href="file:///C:/Users/neeth/.vscode/Bootstrap/ChocoDelight.html" class="nav-link pt-4 me-4"><b>Home</b></a>
+        <a id="a_nav" href="file:///C:/Users/neeth/.vscode/Bootstrap/Aboutus.html" class="nav-link pt-4 me-4"><b>About us</b></a>
+        <a id="a_nav" href="file:///C:/Users/neeth/.vscode/Bootstrap/contact.html" class="nav-link pt-4 me-4"><b>Contact us</b></a>
+    </nav>
+    <main id="main1">
+        <p class="h2 text-dark d-flex justify-content-center">Milk Chocolate</p>
+        <div id="div1_main1">
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://cococart.in/cdn/shop/products/Godiva-17.png?v=1659949337&width=533" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">GODIVA</p>
+                    <p class="card-title">Godiva Salted Caramel Chocolate</p>
+                    <p class="card_text text-danger">Rs.699 <del class="text-secondary">Rs.799</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success px-2 py-1">Buy now</a>
+                </div>
+            </div>
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://i.pinimg.com/1200x/b6/a1/bd/b6a1bd2274e59ce49b84ba33cfbfc913.jpg" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">CADBURY</p>
+                    <p class="card-title">Cadbury Diary Milk</p>
+                    <p class="card_text text-danger">Rs.39 <del class="text-secondary">Rs.49</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success">Buy now</a>
+                </div>
+            </div>
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://i.pinimg.com/736x/a8/35/7b/a8357bd7c8c1469308a9ece8433f2591.jpg" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">LINDT</p>
+                    <p class="card-title">Lindt Lindor Milk Chocolate</p>
+                    <p class="card_text text-danger">Rs.924 <del class="text-secondary">Rs.1010</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success">Buy now</a>
+                </div>
+            </div>
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://i.pinimg.com/736x/b9/c9/8b/b9c98ba7112ad3e446547aa1bb784216.jpg" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">MILKA</p>
+                    <p class="card-title">Milka Bubbly</p>
+                    <p class="card_text text-danger">Rs.149 <del class="text-secondary">Rs.169</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success">Buy now</a>
+                </div>
+            </div>
+        </div>
+        <div id="div2_main1">
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://i.pinimg.com/736x/c5/6e/26/c56e26549222eb07b697b356da6dfa6d.jpg" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">MILKA</p>
+                    <p class="card-title">Milka Oreo</p>
+                    <p class="card_text text-danger">Rs.189 <del class="text-secondary">Rs.199</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success">Buy now</a>
+                </div>
+            </div>
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://i.pinimg.com/1200x/40/83/1b/40831b4a2f0622ccfcfc69c50838beb6.jpg" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">GALAXY</p>
+                    <p class="card-title">Galaxy Smooth Milk</p>
+                    <p class="card_text text-danger">Rs.69 <del class="text-secondary">Rs.89</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success">Buy now</a>
+                </div>
+            </div>
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://i.pinimg.com/1200x/01/4e/d7/014ed7d72eb88a853e7f63548b7f9564.jpg" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">GODIVA</p>
+                    <p class="card-title">Godiva Pearls</p>
+                    <p class="card_text text-danger">Rs.205 <del class="text-secondary">Rs.230</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success">Buy now</a>
+                </div>
+            </div>
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://i.pinimg.com/1200x/df/99/0a/df990a0a572a705047b68062fab23f6d.jpg" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">HERSHEYS</p>
+                    <p class="card-title">Hersheys Milk Chocolate</p>
+                    <p class="card_text text-danger">Rs.190 <del class="text-secondary">Rs.210</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success">Buy now</a>
+                </div>
+            </div>
+        </div>
+        <div id="div3_main1">
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://i.pinimg.com/736x/71/7f/20/717f207e7e8790a38975a8c56b60433d.jpg" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">LINDT</p>
+                    <p class="card-title">Lindt Lindor Milk Chocolate</p>
+                    <p class="card_text text-danger">Rs.924 <del class="text-secondary">Rs.1000</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success">Buy now</a>
+                </div>
+            </div>
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://i.pinimg.com/1200x/d4/c7/fb/d4c7fb8a09b796745c7f09dd30b9f6e4.jpg" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">LINDT</p>
+                    <p class="card-title">Lindt Milk Haselnut</p>
+                    <p class="card_text text-danger">Rs.462 <del class="text-secondary">Rs.500</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success">Buy now</a>
+                </div>
+            </div>
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://i.pinimg.com/736x/30/1c/e6/301ce65c9153a77589a1ff39a81fc3b5.jpg" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">LINDT</p>
+                    <p class="card-title">Lindt Whole Haselnut</p>
+                    <p class="card_text text-danger">Rs.798 <del class="text-secondary">Rs.850</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success">Buy now</a>
+                </div>
+            </div>
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://i.pinimg.com/736x/bd/d8/89/bdd889a5a7e1b2e8ba388bb01d10403c.jpg" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">LINDT</p>
+                    <p class="card-title">Lindt Haselnut Wafer</p>
+                    <p class="card_text text-danger">Rs.499 <del class="text-secondary">Rs.599</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success">Buy now</a>
+                </div>
+            </div>
+        </div>
+        <div id="div4_main1">
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://i.pinimg.com/1200x/fc/20/60/fc20604c8d9231575215452e5435c9e1.jpg" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">SCHOGETTEN</p>
+                    <p class="card-title">SCHOGETTEN Milk Chocolate</p>
+                    <p class="card_text text-danger">Rs.899 <del class="text-secondary">Rs.999</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success">Buy now</a>
+                </div>
+            </div>
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://i.pinimg.com/1200x/f2/a4/99/f2a4992d3a9126d6a5290eb69e18827e.jpg" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">LINDT</p>
+                    <p class="card-title">Lindt Lindor Milk Chocolate</p>
+                    <p class="card_text text-danger">Rs.699 <del class="text-secondary">Rs.799</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success">Buy now</a>
+                </div>
+            </div>
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://i.pinimg.com/1200x/cd/a1/2b/cda12b8511f35156da329b726ab06a70.jpg" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">LINDT</p>
+                    <p class="card-title">Lindt Milk Chocolate</p>
+                    <p class="card_text text-danger">Rs.249 <del class="text-secondary">Rs.349</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success">Buy now</a>
+                </div>
+            </div>
+            <div id="card_main1" class="card">
+                <img id="img_main1" src="https://i.pinimg.com/736x/5b/24/41/5b244154e851ea7c582e0923289d14fd.jpg" alt="">
+                <div class="card_body">
+                    <p id="card_p1" class="card-title text-secondary">HERSHEYS</p>
+                    <p class="card-title">Hershey's Milk Chocolate</p>
+                    <p class="card_text text-danger">Rs.399 <del class="text-secondary">Rs.499</del></p>
+                    <a href="file:///C:/Users/neeth/.vscode/Bootstrap/Buynow.html" class="btn btn-outline-success">Buy now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="d-flex">
+        <div>
+        <h5 id="h5_footer">Company</h5>
+        <a id="a_footer" href="file:///C:/Users/neeth/.vscode/Bootstrap/Aboutus.html" class="d-flex">About us</a>
+        <a id="a_footer" href="file:///C:/Users/neeth/.vscode/Bootstrap/contact.html">Contact us</a>
+        </div>
+        <div>
+        <h5 id="h5_footer">Shop</h5>
+        <a id="a_footer" href="file:///C:/Users/neeth/.vscode/Bootstrap/darkchocolate.html" class="d-flex">Dark Chocolate</a>
+        <a id="a_footer" href="file:///C:/Users/neeth/.vscode/Bootstrap/whitechoco.html" class="d-flex">White Chocolate</a>
+        <a id="a_footer" href="file:///C:/Users/neeth/.vscode/Bootstrap/milkchoco.html" class="d-flex">Milk Chocolate</a>
+        <a id="a_footer" href="file:///C:/Users/neeth/.vscode/Bootstrap/plainchoco.html" class="d-flex">Plain Chocolate</a>
+        </div>
+        <div>
+        <h5 id="h5_footer">Terms & Condition</h5>
+        <a id="a_footer" href="file:///C:/Users/neeth/.vscode/Bootstrap/Deliverypolicy.html" class="d-flex">Delivery Policy</a>
+        <a id="a_footer" href="file:///C:/Users/neeth/.vscode/Bootstrap/Returns.html" class="d-flex">Returns & Refunds Policy</a>
+        </div>
+    </footer>
+</body>
+</html>
